@@ -1,6 +1,8 @@
+{% assign sorted_posts = (site.posts | sort: 'homepage_position', 'last') %}
+
 <div class="posts-list">
   <ul class="list-unstyled">
-      {% for post in site.posts %}
+      {% for post in sorted_posts %}
         <li class="item {% cycle 'odd', 'even' %}">
           {% include widgets/box.html post=post %}
         </li>

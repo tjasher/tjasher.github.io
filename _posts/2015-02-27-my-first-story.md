@@ -1,5 +1,6 @@
 ---
 title: "My Second Story"
+homepage_position: 1
 ---
 
 ### Hello people

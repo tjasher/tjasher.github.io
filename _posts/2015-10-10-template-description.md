@@ -17,7 +17,7 @@ lede_image:
 
 thumbnail_url: "/images/thumbs/template-guy.jpg"
 homepage_title: "Another title"
-homepage_position: 5
+homepage_position: 4
 homepage_size: 1
 ---
 
