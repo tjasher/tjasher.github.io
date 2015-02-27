@@ -1,0 +1,54 @@
+
+# Site settings
+
+url: "http://dansnguyen.github.io" # the base hostname & protocol for your site
+# let's you track visitor counts
+google_analytics_id: UA-somecode
+# point to where this site is hosted on github
+github_source_repo: jekyll-portfolio/jekyll-portfolio.github.io
+
+###########################################
+# Meta stuff
+# this stuff shows up in your site's search results/facebook snippet
+
+title: Jekyll Portfolio Site
+description: "This is a template site for using Jekyll for a portfolio"
+meta_thumbnail_url: http://www.placecage.com/g/500/300
+favicon_ico: /images/site/something.ico
+
+
+
+### These things will show up in your footer
+twitter_id: dancow
+github_id:  dannguyen
+tumblr_id: eyeheartnewyork
+instagram_id: danwinny
+flickr_id: zokuga
+youtube_id: dantanguyen
+linkedin_id: dan-nguyen/2/570/276
+
+about_url: /about/
+contact_url: "/about#contact"
+resume_url: http://www.grad.illinois.edu/careerservices/nonacademic/resumes/samples.pdf
+email: dun@stanford.edu
+
+#######################################
+
+## You probably don't want to mess with this stuff
+markdown: kramdown
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: nil
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+permalink: /posts/:title
+sass:
+    sass_dir: assets/_sass
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"

@@ -1,0 +1,8 @@
+<ul class="list-unstyled">
+  {% for item in include.data  %}
+    <li>
+      <strong>{{ item.title }}</strong>
+      <p>{{ item.description }}</p>
+    </li>
+  {% endfor %}
+</ul>

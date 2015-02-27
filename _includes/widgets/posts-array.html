@@ -1,0 +1,39 @@
+{% assign sorted_posts = (site.posts | sort: 'homepage_position', 'last') %}
+
+<div class="posts-array">
+  <div class="packery-container">
+    <div class="box-sizer"></div>
+    {% for post in sorted_posts %}
+      <div class="item">
+        {% include widgets/box.html post=post %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+    // $(".packery-container").packery({
+    //     itemSelector: '.item',
+    //     gutter: 10,
+    //     columnWidth: ".box-sizer"
+    // });
+
+    var container = document.querySelector('.packery-container');
+    // init
+    var pckry = new Packery( container, {
+      // options
+      columnWidth: ".box-sizer",
+      itemSelector: '.item',
+      gutter: 10
+    });
+
+    $(".packery-container").imagesLoaded()
+        .done( function( instance ) {
+          console.log('all images successfully loaded');
+          pckry.layout();
+    });
+  })
+</script>
+

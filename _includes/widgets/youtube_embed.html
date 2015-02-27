@@ -1,0 +1,18 @@
+{% if include.height %}
+  {% assign height = include.height %}
+{% else %}
+  {% assign height = 600 %}
+{% endif %}
+
+
+{% if include.width %}
+  {% assign width = include.width %}
+{% else %}
+  {% assign width = "100%" %}
+{% endif %}
+
+
+<div class="video video-embed">
+  <iframe width="{{width}}" height="{{height}}" src="https://www.youtube.com/embed/{{include.video_id}}" frameborder="0" allowfullscreen>
+  </iframe>
+</div>

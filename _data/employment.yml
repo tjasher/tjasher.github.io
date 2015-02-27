@@ -1,0 +1,34 @@
+- title: Head of Data
+  place: Skift
+  dates:
+    start: 2012-09
+    end: Present
+  description: |
+    My role is to invent and build data products, including applications for business users and
+    data tools for internal research. I am the primary programmer but have also hired two developers
+    and am responsible for making decisions about our technology stack and best practices.
+- title: Adjunct Instructor in Data Journalism
+  place: "New York University, School of Continuing and Professional Studies"
+  dates:
+    start: 2013-09
+    end: 2013-12
+  description: |
+    I taught NYU-SCPS's first data journalism class to a small group of students without strong
+    technical backgrounds. We focused on storytelling and reporting techniques specific to data, and
+    thorough hands-on experience with data tools. I also [built a website to easily](http://www.smalldatajournalism.com) share data, tutorials, and readings.
+- title: News Application Developer
+  place: ProPublica
+  dates:
+    start: 2008-08
+    end: 2012-09
+  description: |
+    I was ProPublica's first "news apps" developer and led the programming and design for its most
+    well-known online projects, including [Dollars for Docs](//projects.propbulica.org/docdollars), [SOPA Opera](//projects.propublica.org/sopa),
+    and the [Bailout Tracker](//projects.propublica.org/bailout).
+- title: Reporter and Developer
+  place: The Sacramento Bee
+  description: |
+    I started as a beat reporter for education and local government and later helped create the Bee's new online multimedia department. I produced interactive features in Flash and did computer-assisted reporting for the investigative projects team.
+  dates:
+    start: 2005-06
+    end: 2008-07

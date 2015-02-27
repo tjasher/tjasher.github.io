@@ -1,0 +1,30 @@
+<header class="site-header navbar-fixed-top navbar " id="header-headroom">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-4">
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </div>
+
+      <div class="col-sm-8 hidden-phone" style="text-align:right;">
+        <ul class="social_icons list-unstyled list-inline" style="display: inline;">
+            {% include widgets/social_icons.html %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+
+<script>
+$(document).ready(function(){
+  // grab an element
+  var myElement = document.querySelector("#header-headroom");
+  // construct an instance of Headroom, passing the element
+  var headroom  = new Headroom(myElement);
+  // // initialise
+  headroom.init();
+});
+</script>

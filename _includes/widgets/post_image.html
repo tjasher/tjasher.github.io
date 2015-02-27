@@ -1,0 +1,45 @@
+{% if include.width == 'third' %}
+  {% assign width_class = 'third' %}
+{% elsif include.width == 'half' %}
+  {% assign width_class = 'half' %}
+{% else %}
+  {% assign width_class = "full" %}
+{% endif %}
+
+{% if include.pull %}
+  {% assign pull = include.pull %}
+{% else %}
+  {% assign pull = "center" %}
+{% endif %}
+
+
+{% if include.alt %}
+  {% assign alt = include.alt %}
+{% else %}
+  {% assign alt = include.src %}
+{% endif %}
+
+
+<div class="imgwrap pull {{ pull }} {{width_class}}">
+  <div>
+    <img alt="{{ alt }}" src="{{ include.src }}">
+
+    {% if include.caption %}
+      <div class="caption">
+        <div class="content">{{ include.caption | markdownify }}</div>
+
+        {% if include.source_credit %}
+        <div class="credit">
+          {{ include.source_credit  }}
+            {% if include.source_url %}
+              <a class="source_link" href="{{include.source_url}}">(Original source)</a>
+            {% endif %}
+        </div>
+        {% endif %}
+
+
+      </div>
+    {% endif %}
+  </div>
+</div>
+

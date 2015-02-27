@@ -1,0 +1,12 @@
+<div class="posts-list">
+  <ul class="list-unstyled">
+      {% for post in site.posts %}
+        <li class="item {% cycle 'odd', 'even' %}">
+          {% include widgets/box.html post=post %}
+        </li>
+      {% endfor %}
+  </ul>
+</div>
+
+<!--           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+ -->

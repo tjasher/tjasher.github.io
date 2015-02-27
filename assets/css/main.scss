@@ -1,0 +1,32 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+@import
+        "custom_vars/colors",
+        "custom_vars/grid",
+        "custom_vars/typography",
+        "vendor/bootstrap",
+        "vendor/font-awesome/css/font-awesome.css",
+        "template/footer",
+        "template/header",
+        "template/effects",
+        "template/post",
+        "template/gallery",
+        "template/homepage"
+
+;
+
+.imgwrap{
+  img{
+    width: 100%;
+  }
+}
+
+
+.sec{
+    margin-bottom: 2.0em;
+}

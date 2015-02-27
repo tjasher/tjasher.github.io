@@ -1,0 +1,48 @@
+{% assign _post = include.post %}
+
+{% assign boxsize = 1 %}
+{% assign title = post.title %}
+{% assign description = post.description %}
+
+{% if _post.homepage_size %}
+  {% assign boxsize = _post.homepage_size %}
+{% endif %}
+
+{% if _post.homepage_title %}
+  {% assign title = _post.homepage_title %}
+{% endif %}
+
+{% if _post.homepage_description %}
+  {% assign description = _post.homepage_description %}
+{% endif %}
+
+{% if _post.homepage_theme == 'invert' %}
+  {% assign color_theme = 'invert' %}
+{% else %}
+  {% assign color_theme = 'normal' %}
+{% endif %}
+
+{% if _post.redirect_to_url %}
+  {% assign post_url = _post.redirect_to_url %}
+  {% assign url_target = "_blank" %}
+{% else %}
+  {% assign post_url = _post.url | prepend: site.baseurl %}
+{% endif %}
+
+<div class="box box-{{boxsize}} {{color_theme}}" style="">
+  <a href="{{ post_url }}" class="title-link" {% if url_target %} target="{{url_target}}" {% endif %}>
+    <div class="thumb-wrapper">
+      {% if _post.thumbnail_url %}
+        <div class="imgwrap thumb">
+          <img src="{{_post.thumbnail_url}}" alt="thumbnail">
+        </div>
+      {% endif %}
+    </div>
+    <div class="text">
+      <h3 class="title">
+          {{ title }}
+      </h3>
+      <p class="description">{{ description }}</p>
+    </div>
+  </a>
+</div>

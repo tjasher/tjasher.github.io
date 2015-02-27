@@ -1,0 +1,28 @@
+- title: Ruby
+  description: |
+      The Ruby language is my workhorse scripting language, for both full-fledged applications and impromptu
+      utility scripts. I often use Ruby as a glue between scripts from more specialized languages, such as R and SQL.
+- title: Ruby on Rails
+  description: |
+      This is my primary web framework, which I've used to build award-winning in-depth news projects that can handle
+      traffic from millions of users. I've also built apps using the more minimalist Sinatra and Padrino frameworks.
+- title: Databases
+  description: |
+      My main production database languages are MySQL and SQLite, which I use as data stores for both web applications
+      and large data-mining operations and analyses. I've also used MongoDB for web applications.
+- title: JavaScript
+  description: |
+      Most of my JS work is in user-interface features and visualizations with libraries such as jQuery, D3, and Highcharts. I also
+      have some experience with client-heavy frameworks such as AngularJS.
+- title: Code and project management
+  description: |
+      I use git daily for tracking personal and for managing professional team projects and I
+      regularly contribute to Github open-source repositories. I have extensive experience in
+      test-driven development, particularly with the RSpec and Jasmine libraries.
+- title: System Operations
+  description: |
+      I've deployed, secured, and maintained web sites both on hosted platforms and custom cloud servers, including Heroku
+      and Amazon EC2.
+- title: PHP
+  description: |
+      This was my first language for building interactive news projects, including a crime mapper, and I currently use it to maintain WordPress sites.

@@ -1,0 +1,31 @@
+---
+layout: default
+hide_header: true
+---
+
+<div class="homepage">
+  <section>
+    <div class="banner-wrapper">
+      {% include homepage/banner.html %}
+    </div>
+  </section>
+
+
+  <section class="callout">
+    {% include homepage/callout.html %}
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <h2>My posts array</h2>
+      <p>Check <code>index.html</code> to see where this is in the homepage code </p>
+      <p>
+        This array of posts is created by the file, <code>_includes/widgets/posts-array.html</code>
+      </p>
+
+      {% include widgets/posts-array.html %}
+    </div>
+  </section>
+</div>
+
+

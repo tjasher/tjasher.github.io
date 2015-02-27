@@ -1,0 +1,73 @@
+{% if include.layout == 'instagram' %}
+  {% assign layout = 'instagram' %}
+{% else %}
+  {% assign layout = 'buzzfeed' %}
+{% endif %}
+
+
+<!-- aw screw it, just dupe the different gallery html for now, refactor later -->
+
+
+{% if layout == 'instagram' %}
+  <ul class="gallery list-unstyled instagram">
+    {% for item in include.data  %}
+      {% assign image_slug = item.image_url | slugify %}
+
+      <li class="image">
+        <div class="imgwrap">
+          <a href="{{item.image_url}}" class="colorbox">
+            <img src="{{item.image_url}}" alt="{{item.image_url}}" data-toggle="modal" data-target="#{{image_slug}}">
+          </a>
+        </div>
+<!--
+          <div class="caption">
+            <strong>{{ item.title }}</strong>
+            <p>{{ item.description }}</p>
+          </div>
+ -->
+      </li>
+    {% endfor %}
+  </ul>
+<!--
+<script>
+
+$(document).ready(function(){
+
+  $('a.colorbox').colorbox({maxHeight: "80%", maxWidth: "95%", opacity: 1.0, closeButton: false});
+
+  $(document).bind('cbox_complete', function(){
+    $("#colorbox").click(function(){
+      $.colorbox.close()
+    })
+  });
+
+})
+
+</script> -->
+
+
+{% else %}
+  <ul class="gallery list-unstyled buzzfeed">
+    {% for item in include.data  %}
+      <li class="image">
+        <div class="imgwrap">
+          <img src="{{item.image_url}}" alt="{{item.image_url}}">
+        </div>
+          <div class="caption">
+            <div class="content">
+
+              {% if item.title %}
+                <span class="title">{{ item.title }}</span>
+              {% endif %}
+
+              {% if item.title %}
+                <span class="description">{{ item.description }}</span>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
