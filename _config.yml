@@ -1,7 +1,7 @@
 
 # Site settings
 
-url: "http://dansnguyen.github.io" # the base hostname & protocol for your site
+url: "http://tjasher.github.io" # the base hostname & protocol for your site
 # let's you track visitor counts
 google_analytics_id: UA-somecode
 # point to where this site is hosted on github
@@ -19,8 +19,8 @@ favicon_ico: /images/site/something.ico
 
 
 ### These things will show up in your footer
-twitter_id: dancow
-github_id:  dannguyen
+twitter_id: tobinasher
+github_id:  tobinasher
 tumblr_id: eyeheartnewyork
 instagram_id: danwinny
 flickr_id: zokuga
